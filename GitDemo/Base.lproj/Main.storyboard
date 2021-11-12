@@ -1,24 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GitDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="autumn-background" translatesAutoresizingMaskIntoConstraints="NO" id="bIL-Xp-7Ub">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OAs-Kh-Euq">
+                                <rect key="frame" x="107" y="418" width="200" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="94Q-Yg-5xl"/>
+                                    <constraint firstAttribute="width" constant="200" id="Rot-dd-tm1"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.60650259259999995" green="0.3946872354" blue="0.1188501492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="40"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="bVO-or-czZ" kind="show" id="pPG-mt-Jua"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="bIL-Xp-7Ub" secondAttribute="bottom" id="Dr2-aH-8Kz"/>
+                            <constraint firstItem="bIL-Xp-7Ub" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="OzT-UJ-lsO"/>
+                            <constraint firstItem="OAs-Kh-Euq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TVc-iA-KMY"/>
+                            <constraint firstItem="bIL-Xp-7Ub" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="l3T-dd-kR6"/>
+                            <constraint firstItem="OAs-Kh-Euq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wvG-Gi-EW8"/>
+                            <constraint firstItem="bIL-Xp-7Ub" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xi2-kq-TWW"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="114.50892857142857"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uFR-Zu-AZw">
+            <objects>
+                <viewController id="bVO-or-czZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="APa-bI-oGq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="autumn-background" translatesAutoresizingMaskIntoConstraints="NO" id="ZAK-iX-ESt">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="season" translatesAutoresizingMaskIntoConstraints="NO" id="aRG-SQ-0fK">
+                                <rect key="frame" x="87" y="80" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Eu7-bf-BIl"/>
+                                    <constraint firstAttribute="height" constant="240" id="Q7v-qs-RZh"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1eS-FY-2Iy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZAK-iX-ESt" firstAttribute="top" secondItem="APa-bI-oGq" secondAttribute="top" id="Een-MG-W1L"/>
+                            <constraint firstItem="aRG-SQ-0fK" firstAttribute="top" secondItem="1eS-FY-2Iy" secondAttribute="top" constant="80" id="FlB-cp-KGI"/>
+                            <constraint firstAttribute="bottom" secondItem="ZAK-iX-ESt" secondAttribute="bottom" id="Rbo-nE-iDs"/>
+                            <constraint firstItem="ZAK-iX-ESt" firstAttribute="leading" secondItem="1eS-FY-2Iy" secondAttribute="leading" id="d5z-5m-T1k"/>
+                            <constraint firstItem="ZAK-iX-ESt" firstAttribute="trailing" secondItem="1eS-FY-2Iy" secondAttribute="trailing" id="gsJ-mT-Z1n"/>
+                            <constraint firstItem="aRG-SQ-0fK" firstAttribute="centerX" secondItem="APa-bI-oGq" secondAttribute="centerX" id="zK9-Ib-HDy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lt3-IB-7cU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CSD-vi-0CH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1004" y="115"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="autumn-background" width="1080" height="1920"/>
+        <image name="season" width="1500" height="1500"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
